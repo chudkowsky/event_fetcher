@@ -1507,6 +1507,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "send_transaction"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "shard-core",
+ "starknet",
+ "starknet-crypto",
+ "tokio",
+]
+
+[[package]]
 name = "serde"
 version = "1.0.217"
 source = "registry+https://github.com/rust-lang/crates.io-index"
