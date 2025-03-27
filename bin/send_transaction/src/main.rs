@@ -26,7 +26,7 @@ pub async fn main() {
 
     let calldata: Vec<Felt> = raw_args
         .split(',')
-        .map(|s| Felt::from_dec_str(s.trim()).unwrap())
+        .map(|s| Felt::from_hex(s.trim()).unwrap())
         .collect();
     println!("{:?}", calldata);
     send_transaction::send_transaction(
